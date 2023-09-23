@@ -26,9 +26,9 @@ body {
 } */
 
 .narvArea {
-  padding-left: 150px;
+  padding-left: 170px;
   padding-top: 30px;
-  padding-right: 150px;
+  padding-right: 170px;
   display: flex;
   width: 100%;
   height: 3rem;
@@ -88,7 +88,7 @@ body {
 .mainContentLeft {
   word-spacing: 10px;
   letter-spacing: 2.9px;
-  padding-left: 150px;
+  padding-left: 170px;
   padding-top: 80px;
   height: 100%;
   width: 50%;
@@ -176,7 +176,7 @@ body {
 
 .mainContentRight {
   margin-top: -80px;
-  padding-right: 150px;
+  padding-right: 170px;
   height: 100%;
   width: 50%;
   display: flex;
@@ -257,39 +257,133 @@ hr {
 }
 
 /* Responsiveness */
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1050px) {
+
+  .General-container {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
   .narvArea {
+    background-color: rgba(215, 113, 25, 0.953);
     display: flex;
     flex-direction: column;
     width: 100vb;
-    height: 3rem;
+    height: auto;
+  }
+
+  .narv-left div,
+  .narv-middle a,
+  .icon1,
+  .icon2,
+  .menuicon {
+    color: #FAF8F5;
+  }
+
+  .narv-middle a,
+  .icon1,
+  .icon2 {
+    font-size: 20px;
+    font-weight: 500px;
+  }
+
+  .brandicons {
+    align-content: space-between;
   }
 
   .contentWrap {
+
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    gap: 60px;
+    align-items: center;
+    gap: 130px;
     width: 100vb;
   }
 
+  .mainContentLeft {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 120px;
+    height: 1600px;
+  }
+
   .title {
-    width: 350px;
-    font-size: smaller;
+    color: rgba(215, 113, 25, 0.953);
+    width: 650px;
+    word-spacing: normal;
+    line-height: normal;
     font-size: 50px;
-    font-weight: 400;
-    line-height: 56px;
+    font-weight: 700px;
+    height: 20px;
+  }
+
+  .subtitle {
+    align-self: center;
+    padding-top: 5px;
+    opacity: .8;
+    min-width: 250px;
+    height: auto;
+    text-wrap: wrap;
+  }
+
+  .buttons {
+    margin-top: -30px;
+  }
+
+  .btn2 img {
+    margin-left: -36px;
+  }
+
+  .btn2 p {
+    color: rgba(215, 113, 25, 0.953);
   }
 
   .sampleimg1 {
-    width: 250px;
+    width: 350px;
     margin: 0;
   }
 
 
   .sampleimg2 {
-    width: 250px;
+    width: 330px;
     margin: 0;
   }
 
+  .tetimonials {
+    margin-top: -10px;
+    padding-top: 15px;
+    margin-left: -80px;
+    gap: 69px;
+  }
+
+  .number {
+    font-size: 45px;
+    line-height: 56px;
+  }
+
+  .records p {
+    line-height: 25px;
+    opacity: 0.6;
+    color: rgba(215, 113, 25, 0.953);
+  }
+
+  .mainContentRight {
+    margin-left: -150px;
+    height: 400%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .services {
+    position: absolute;
+    left: -240px;
+    bottom: -650px;
+    width: 500px;
+    height: 270px;
+  }
 }
