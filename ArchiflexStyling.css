@@ -15,12 +15,20 @@ body {
   width: 100%;
 }
 
+/* .whitefill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background-color: #FAF8F5;
+  z-index: 7;
+
+} */
 
 .narvArea {
-  /* padding: 20px 50px 0px 50; */
-  padding-left: 80px;
+  padding-left: 150px;
   padding-top: 30px;
-  padding-right: 80px;
+  padding-right: 150px;
   display: flex;
   width: 100%;
   height: 3rem;
@@ -73,11 +81,14 @@ body {
   display: flex;
   width: 100%;
   height: 95vh;
+  margin-top: 0;
   padding-top: 60px;
 }
 
 .mainContentLeft {
-  padding-left: 80px;
+  word-spacing: 10px;
+  letter-spacing: 2.9px;
+  padding-left: 150px;
   padding-top: 80px;
   height: 100%;
   width: 50%;
@@ -91,9 +102,12 @@ body {
   font-size: 80px;
   font-weight: 400;
   line-height: 96px;
+  z-index: 2;
 }
 
 .subtitle {
+  word-spacing: 5px;
+  letter-spacing: 1.5px;
   padding-top: 15px;
   width: 803px;
   font-size: 24px;
@@ -103,15 +117,16 @@ body {
 }
 
 .buttons {
+  width: 180px;
   padding-top: 50px;
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 
 .btn1 {
   background-color: #424241;
   display: flex;
-  padding: 16px;
+  padding: 14px;
   width: 180px;
   align-items: center;
   justify-content: center;
@@ -120,7 +135,7 @@ body {
 
 .btn2 {
   display: flex;
-  padding: 16px;
+  padding: 14px;
   width: 180px;
   align-items: center;
   justify-content: center;
@@ -129,9 +144,10 @@ body {
 
 .btn1 p,
 .btn2 p {
+  width: 100px;
   color: #FAF8F5;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 22px;
 }
 
 .btn2 p {
@@ -139,9 +155,9 @@ body {
 }
 
 .tetimonials {
-  padding-top: 170px;
+  padding-top: 200px;
   display: flex;
-  gap: 80px;
+  gap: 100px;
 }
 
 .number {
@@ -149,6 +165,7 @@ body {
   font-size: 64px;
   font-weight: 500;
   line-height: 96px;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .records p {
@@ -158,6 +175,121 @@ body {
 }
 
 .mainContentRight {
+  margin-top: -80px;
+  padding-right: 150px;
   height: 100%;
   width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 102px;
+}
+
+.sampleimg1 {
+  width: 480px;
+  height: 640px;
+  margin-left: -240px;
+}
+
+.serviceImg_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sampleimg2 {
+  position: absolute;
+  left: 20px;
+  bottom: -315px;
+  width: 480px;
+  height: 640px;
+}
+
+.services {
+  position: absolute;
+  left: 47px;
+  bottom: -495px;
+  width: 426px;
+  height: auto;
+  display: inline-flex;
+  flex-direction: column;
+  background: #FAF8F5;
+  padding: 32px;
+  gap: 15px
+}
+
+.services h3 {
+  color: #424241;
+  font-size: 18px;
+  line-height: 32px;
+  opacity: .7;
+}
+
+.servicecat {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.serv-num {
+  color: #9E9D9B;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.serv-type {
+  width: 260px;
+  padding-left: 20px;
+  color: #424241;
+  font-size: 24px;
+}
+
+.servicecat img {
+  margin-left: 35px;
+  /* align-self: flex-end; */
+}
+
+hr {
+  color: #DEDAD5;
+  height: 1px;
+  opacity: 0.3;
+}
+
+/* Responsiveness */
+@media screen and (max-width:1500px) {
+  .narvArea {
+    display: flex;
+    flex-direction: column;
+    width: 100vb;
+    height: 3rem;
+  }
+
+  .contentWrap {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 60px;
+    width: 100vb;
+  }
+
+  .title {
+    width: 350px;
+    font-size: smaller;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 56px;
+  }
+
+  .sampleimg1 {
+    width: 250px;
+    margin: 0;
+  }
+
+
+  .sampleimg2 {
+    width: 250px;
+    margin: 0;
+  }
+
 }
