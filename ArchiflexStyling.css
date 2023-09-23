@@ -15,16 +15,6 @@ body {
   width: 100%;
 }
 
-/* .whitefill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  background-color: #FAF8F5;
-  z-index: 7;
-
-} */
-
 .narvArea {
   padding-left: 170px;
   padding-top: 30px;
@@ -257,7 +247,7 @@ hr {
 }
 
 /* Responsiveness */
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1400px) {
 
   .General-container {
     width: 100%;
@@ -381,9 +371,14 @@ hr {
 
   .services {
     position: absolute;
-    left: -240px;
-    bottom: -650px;
+    left: -270px;
+    bottom: -560px;
     width: 500px;
     height: 270px;
+  }
+
+  .services h3 {
+    color: rgb(46, 75, 84);
+    opacity: 0.8;
   }
 }
